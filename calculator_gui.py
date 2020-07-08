@@ -4,12 +4,6 @@ Project Name: calculator_gui.py
 This is a GUI calculator designed using tkinter. 
 Designed following a tutorial.
 """
-"""
-* import tkinter
-* create main window
-* add number widgets
-* apply event trigger on widgets
-"""
 
 from tkinter import *
 
@@ -53,55 +47,72 @@ if __name__ == "__main__":
     equation.set(" ")
 
     #creating the buttons on the window
-    buttonOne = Button(calc, text = " 1 ", fg = "black", bg = "grey", command = lambda: press(1), height = 1, width = 7)
+    buttonOne = Button(calc, text = " 1 ", fg = "black", bg = "grey", 
+                            command = lambda: press(1), height = 1, width = 7)
     buttonOne.grid(row = 2, column = 0)
 
-    buttonTwo = Button(calc, text = " 2 ", fg = "black", bg = "grey", command = lambda: press(2), height = 1, width = 7)
+    buttonTwo = Button(calc, text = " 2 ", fg = "black", bg = "grey", 
+                            command = lambda: press(2), height = 1, width = 7)
     buttonTwo.grid(row = 2, column = 1)
 
-    buttonThree = Button(calc, text = " 3 ", fg = "black", bg = "grey", command = lambda: press(3), height = 1, width = 7)
+    buttonThree = Button(calc, text = " 3 ", fg = "black", bg = "grey", 
+                            command = lambda: press(3), height = 1, width = 7)
     buttonThree.grid(row = 2, column = 2)
 
-    buttonFour = Button(calc, text = " 4 ", fg = "black", bg = "grey", command = lambda: press(4), height = 1, width = 7)
+    buttonFour = Button(calc, text = " 4 ", fg = "black", bg = "grey", 
+                            command = lambda: press(4), height = 1, width = 7)
     buttonFour.grid(row = 3, column = 0)
 
-    buttonFive = Button(calc, text = " 5 ", fg = "black", bg = "grey", command = lambda: press(5), height = 1, width = 7)
+    buttonFive = Button(calc, text = " 5 ", fg = "black", bg = "grey", 
+                            command = lambda: press(5), height = 1, width = 7)
     buttonFive.grid(row = 3, column = 1)
 
-    buttonSix = Button(calc, text = " 6 ", fg = "black", bg = "grey", command = lambda: press(6), height = 1, width = 7)
+    buttonSix = Button(calc, text = " 6 ", fg = "black", bg = "grey", 
+                            command = lambda: press(6), height = 1, width = 7)
     buttonSix.grid(row = 3, column = 2)
 
-    buttonSeven = Button(calc, text = " 7 ", fg = "black", bg = "grey", command = lambda: press(7), height = 1, width = 7)
+    buttonSeven = Button(calc, text = " 7 ", fg = "black", bg = "grey", 
+                            command = lambda: press(7), height = 1, width = 7)
     buttonSeven.grid(row = 4, column = 0)
 
-    buttonEight = Button(calc, text = " 8 ", fg = "black", bg = "grey", command = lambda: press(8), height = 1, width = 7)
+    buttonEight = Button(calc, text = " 8 ", fg = "black", bg = "grey", 
+                            command = lambda: press(8), height = 1, width = 7)
     buttonEight.grid(row = 4, column = 1)
 
-    buttonNine = Button(calc, text = " 9 ", fg = "black", bg = "grey", command = lambda: press(9), height = 1, width = 7)
+    buttonNine = Button(calc, text = " 9 ", fg = "black", bg = "grey", 
+                            command = lambda: press(9), height = 1, width = 7)
     buttonNine.grid(row = 4, column = 2)
 
-    buttonZero = Button(calc, text = " 0 ", fg = "black", bg = "grey", command = lambda: press(0), height = 1, width = 7)
+    buttonZero = Button(calc, text = " 0 ", fg = "black", bg = "grey", 
+                            command = lambda: press(0), height = 1, width = 7)
     buttonZero.grid(row = 5, column = 0)
 
-    plusSign = Button(calc, text = " + ", fg = "black", bg = "grey", command = lambda: press("+"), height = 1, width = 7)
+    plusSign = Button(calc, text = " + ", fg = "black", bg = "grey", 
+                            command = lambda: press("+"), height = 1, width = 7)
     plusSign.grid(row = 2, column = 3)
 
-    minusSign = Button(calc, text = " - ", fg = "black", bg = "grey", command = lambda: press("-"), height = 1, width = 7)
+    minusSign = Button(calc, text = " - ", fg = "black", bg = "grey", 
+                            command = lambda: press("-"), height = 1, width = 7)
     minusSign.grid(row = 3, column = 3)
 
-    divideSign = Button(calc, text = " / ", fg = "black", bg = "grey", command = lambda: press("/"), height = 1, width = 7)
+    divideSign = Button(calc, text = " / ", fg = "black", bg = "grey", 
+                            command = lambda: press("/"), height = 1, width = 7)
     divideSign.grid(row = 4, column = 3)
 
-    multiplySign = Button(calc, text = " * ", fg = "black", bg = "grey", command = lambda: press("*"), height = 1, width = 7)
+    multiplySign = Button(calc, text = " * ", fg = "black", bg = "grey", 
+                            command = lambda: press("*"), height = 1, width = 7)
     multiplySign.grid(row = 5, column = 3)
 
-    equalSign = Button(calc, text = " = ", fg = "black", bg = "grey", command = equalPress, height = 1, width = 7)
+    equalSign = Button(calc, text = " = ", fg = "black", bg = "grey", 
+                            command = equalPress, height = 1, width = 7)
     equalSign.grid(row = 5, column = 2)
 
-    clear = Button(calc, text = " C ", fg = "black", bg = "grey", command = clear, height = 1, width = 7)
+    clear = Button(calc, text = " C ", fg = "black", bg = "grey", 
+                            command = clear, height = 1, width = 7)
     clear.grid(row = 5, column = 1)
 
-    decimal = Button(calc, text = " . ", fg = "black", bg = "grey", command = lambda: press("."), height = 1, width = 7)
+    decimal = Button(calc, text = " . ", fg = "black", bg = "grey",
+                            command = lambda: press("."), height = 1, width = 7)
     decimal.grid(row = 6, column = 0)
 
     calc.mainloop() #start GUI

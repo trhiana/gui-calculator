@@ -4,4 +4,4 @@ This is a GUI calculator made with Python and tkinter. I designed this while fol
 # Requirements
 * Python 3.x
 * tkinter 
-* lamda function  
+* lambda function  
